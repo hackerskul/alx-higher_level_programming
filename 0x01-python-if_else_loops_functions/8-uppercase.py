@@ -1,7 +1,13 @@
 #!/usr/bin/python3
-def uppercase(str):
-    for char in str:
+def uppercase(s):
+    result = ""
+    for char in s:
         if ord('a') <= ord(char) <= ord('z'):
-            print("{:c}".format(ord(char) - ord('a') + ord('A')), end="")
+            result += "{:c}".format(ord(char) - ord('a') + ord('A'))
         else:
-            print("{}".format(char), end="")
+            result += "{}".format(char)
+    print(result)
+
+if __name__ == "__main__":
+    uppercase("best")
+    uppercase("Best School 98 Battery street")
