@@ -15,5 +15,5 @@ def print_arguments():
     for i in range(1, len(sys.argv)):
         print(f"{i}:", sys.argv[i])
 
-
-print_arguments()
+if __name__ == "__main__":
+    print_arguments()
