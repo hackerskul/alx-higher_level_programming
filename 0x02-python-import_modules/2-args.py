@@ -6,7 +6,7 @@ def print_arguments():
     nmbr = len(sys.argv) - 1
 
     if nmbr == 0:
-        print("0 arguments")
+        print("0 arguments.")
     elif nmbr == 1:
         print("1 argument:")
     else:
