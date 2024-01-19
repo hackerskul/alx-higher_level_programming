@@ -96,7 +96,7 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
-        """returns a formated string"""
+        """returns a formated string of tha values id width height etc"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
