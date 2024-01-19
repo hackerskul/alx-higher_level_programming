@@ -83,10 +83,6 @@ class Rectangle(Base):
         """Return the area of the Rectangle."""
         return self.width * self.height
 
-    def area(self):
-        """Returns the area of the rectangle"""
-        return self.width * self.height
-
     def display(self):
         """Print the Rectangle using the `#` character."""
         if self.width == 0 or self.height == 0:
@@ -100,6 +96,7 @@ class Rectangle(Base):
             print("")
 
     def __str__(self):
+        """returns a formated string"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y, self.width, self.height)
 
     def update(self, *args, **kwargs):
